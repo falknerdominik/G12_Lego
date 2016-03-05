@@ -8,11 +8,11 @@ using System.Threading;
 
 namespace MonoBrickHelloWorld
 {
-	class MainClass
+	class MainClass //test
 	{
 		public static void Main (string[] args)
 		{
-			InfoDialog dialog = new InfoDialog ("Attach a motor to port A", true);
+			InfoDialog dialog = new InfoDialog ("Attach a motor to port A", "information");
 			dialog.Show ();//Wait for enter to be pressed
 			Motor motor = new Motor (MotorPort.OutA);
 			motor.SetSpeed (50);
